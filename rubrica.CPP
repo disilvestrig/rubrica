@@ -13,8 +13,9 @@ int main () {
 	list <int> numeri ;
 	list <int> :: iterator p ;
 	char alphabet[24] ;
-	string res,nome,cognome,check,stop,check2,check3 ;
-	int len , numero;
+	string res,nome,cognome,check,stop,check2;
+	int len;
+	double numero,check3,check4;
 	len = 0; 
     res = " ";
 	
@@ -86,10 +87,10 @@ int main () {
 	       	        numeri.pop_back();}}
 	       	if (res == "3"){
 	        	cout << "Inserisci numero\n" ;
-	        	cin >> check ;
+	        	cin >> check3 ;
 	        	for (int i = 0;i<len; i ++){
-					check2 = numeri.back();
-	       	        if (check2 == check){
+					check4 = numeri.back();
+	       	        if (check4 == check3){
 	       	        	cout << nomi.back() << " ";
 	       	        	cout << cognomi.back() << " : ";
 	       	        	cout <<"+39 "<< numeri.back() << "\n";
